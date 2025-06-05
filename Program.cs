@@ -1,3 +1,8 @@
+/*
+Name       : Rana Muhammad Awais
+StudentID  : 40742404
+Module code: EN8107
+*/
 using System;
 using System.IO;
 
@@ -60,7 +65,8 @@ class Program
 
         // User statistics
         foreach (var user in library.Users.Values)
-            Console.WriteLine($"User {user.Name} has borrowed {user.BorrowedBooks.Count} items.");
+            if (user.BorrowedBooks.Count > 0)
+                Console.WriteLine($"User {user.Name} has borrowed {user.BorrowedBooks.Count} items.");
 
         // User roles demo (if you want to show roles, you can add a property or just print example)
         Console.WriteLine("User Admin User role: Admin");

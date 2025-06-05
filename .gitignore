@@ -1,0 +1,10 @@
+# Ignore build output and user-specific files for .NET projects
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+# Ignore test output files
+test_inventory_out.txt
+test_users_out.txt

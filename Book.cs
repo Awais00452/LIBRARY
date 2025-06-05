@@ -4,21 +4,13 @@ StudentID  : 40742404
 Module code: EN8107
 */
 
-public class Book
+// Book class inherits from Item for extensibility
+public class Book : Item
 {
-    public string Title { get; set; }
-    public string Author { get; set; }
-    public string ISBN { get; set; }
-    public bool IsAvailable { get; set; }
+    public string ISBN => Id; // For clarity in code using ISBN
 
     public Book(string title, string author, string isbn, bool isAvailable)
+        : base(title, author, isbn, isAvailable)
     {
-        if (string.IsNullOrWhiteSpace(title)) throw new ArgumentException("Title cannot be empty.");
-        if (string.IsNullOrWhiteSpace(author)) throw new ArgumentException("Author cannot be empty.");
-        if (string.IsNullOrWhiteSpace(isbn)) throw new ArgumentException("ISBN cannot be empty.");
-        Title = title;
-        Author = author;
-        ISBN = isbn;
-        IsAvailable = isAvailable;
     }
 }
