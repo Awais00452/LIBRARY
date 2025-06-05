@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# LIBRARY
+library with .cs files of all things needed . 
+=======
+>>>>>>> local-commits
 # Library Management System
 
 Name: Rana Muhammad Awais  
@@ -29,3 +36,7 @@ This is a C# library management system. It lets you add, search, borrow, and ret
 
 ## Note
 GUI is not included because WinForms is not supported on macOS.
+<<<<<<< HEAD
+=======
+>>>>>>> 890ac4f (Initial commit)
+>>>>>>> local-commits
