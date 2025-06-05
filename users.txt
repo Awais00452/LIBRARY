@@ -1,0 +1,7 @@
+// Sample users.txt
+// Format: UserId|Name|ISBN1,ISBN2,...
+u123|Alice|9780261102217,9780439136365
+u456|Bob|9780061120084
+u789|Charlie|
+u101|David|9780316769488
+u202|Emily|
